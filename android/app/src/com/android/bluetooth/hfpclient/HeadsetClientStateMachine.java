@@ -1838,8 +1838,8 @@ public class HeadsetClientStateMachine extends StateMachine {
                         logD("Setting sampling rate as 16000");
                         mAudioManager.setHfpSamplingRate(16000);
                     } else {
-                        logD("Setting sampling rate as 8000");
-                        mAudioManager.setHfpSamplingRate(8000);
+                        Log.e(TAG, "NXP HotFix Setting sampling rate as 16000 instead 8000");
+                        mAudioManager.setHfpSamplingRate(16000);
                     }
                     logD("hf_volume " + hfVol);
                     routeHfpAudio(true);
