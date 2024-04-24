@@ -162,8 +162,8 @@ static const enh_esco_params_t default_esco_parameters[ESCO_NUM_CODECS] = {
         .output_coding_format = {.coding_format = ESCO_CODING_FORMAT_LINEAR,
                                  .company_id = 0x0000,
                                  .vendor_specific_codec_id = 0x0000},
-        .input_coded_data_size = 16,
-        .output_coded_data_size = 16,
+        .input_coded_data_size = 8,
+        .output_coded_data_size = 8,
         .input_pcm_data_format = ESCO_PCM_DATA_FORMAT_2_COMP,
         .output_pcm_data_format = ESCO_PCM_DATA_FORMAT_2_COMP,
         .input_pcm_payload_msb_position = 0,
@@ -174,7 +174,7 @@ static const enh_esco_params_t default_esco_parameters[ESCO_NUM_CODECS] = {
         .output_transport_unit_size = 0x00,
         .max_latency_ms = 8,
         .packet_types =
-            (ESCO_PKT_TYPES_MASK_EV3 | ESCO_PKT_TYPES_MASK_NO_3_EV3 |
+            (ESCO_PKT_TYPES_MASK_EV3 |
              ESCO_PKT_TYPES_MASK_NO_2_EV5 | ESCO_PKT_TYPES_MASK_NO_3_EV5 |
              ESCO_PKT_TYPES_MASK_NO_2_EV3),
         .retransmission_effort = ESCO_RETRANSMISSION_QUALITY,
@@ -200,8 +200,8 @@ static const enh_esco_params_t default_esco_parameters[ESCO_NUM_CODECS] = {
         .output_coding_format = {.coding_format = ESCO_CODING_FORMAT_LINEAR,
                                  .company_id = 0x0000,
                                  .vendor_specific_codec_id = 0x0000},
-        .input_coded_data_size = 16,
-        .output_coded_data_size = 16,
+        .input_coded_data_size = 8,
+        .output_coded_data_size = 8,
         .input_pcm_data_format = ESCO_PCM_DATA_FORMAT_2_COMP,
         .output_pcm_data_format = ESCO_PCM_DATA_FORMAT_2_COMP,
         .input_pcm_payload_msb_position = 0,
@@ -212,7 +212,7 @@ static const enh_esco_params_t default_esco_parameters[ESCO_NUM_CODECS] = {
         .output_transport_unit_size = 0x00,
         .max_latency_ms = 13,
         .packet_types =
-            (ESCO_PKT_TYPES_MASK_EV3 | ESCO_PKT_TYPES_MASK_NO_3_EV3 |
+            (ESCO_PKT_TYPES_MASK_EV3 |
              ESCO_PKT_TYPES_MASK_NO_2_EV5 | ESCO_PKT_TYPES_MASK_NO_3_EV5),
         .retransmission_effort = ESCO_RETRANSMISSION_QUALITY,
         .coding_format = ESCO_CODING_FORMAT_MSBC,
